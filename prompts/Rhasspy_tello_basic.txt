@@ -1,0 +1,29 @@
+drone takeoff
+drone land
+drone.fly_forward
+drone.fly_backward
+drone.fly_left
+drone.fly_right
+drone.fly_up
+drone.fly_down
+
+drone.flip_forward
+drone.flip_backward
+drone.flip_left
+drone.flip_righ
+
+drone.yaw_left(angle)  
+rotate the drone left
+
+drone.yaw_right(angle)
+rotate the drone right 
+
+drone.set_speed(speed)
+set the speed of the drone
+
+origin 
+front right corner
+front left corner
+back left corner
+back right corner
+
