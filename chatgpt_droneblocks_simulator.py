@@ -69,8 +69,9 @@ class colors:  # You may need to change color settings
 print(f"Initializing drone...")
 
 drone = SimulatedDrone(config["DRONEBLOCKS_SIM_KEY"])
+drone.set_speed(100)
 
-dict_of_corners = {'origin': [0, 0], 'front right corner': [1000, -1000], 'front left corner': [1000, 1000], 'back left corner': [-1000, 1000], 'back right corner': [-1000, -1000]}
+dict_of_corners = {'origin': [0, 0], 'front right corner': [2408, -2408], 'front left corner': [2408, 2408], 'back left corner': [-2408, 2408], 'back right corner': [-2408, -2408]}
 
 print(f"Done.")
 
@@ -99,4 +100,5 @@ while True:
     if code is not None:
         print("Please wait while I run the code in the DroneBlocks Simulator...")
         exec(extract_python_code(response))
+        print(response)
         print("Done!\n")
